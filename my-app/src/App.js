@@ -6,6 +6,7 @@ import friends from "./friends.json";
 import Score from "./components/Score/Score";
 import "./App.css";
 
+ 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
@@ -13,8 +14,9 @@ class App extends Component {
     score: 0
   };
 
-  addPoint = () => {
-    this.setState({ count: this.state.count + 1 });
+  addPoint = (id) => {
+    this.setState({ score: this.state.score + 1 });
+    console.log(this.state.score);
   };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -31,6 +33,7 @@ class App extends Component {
             key={friend.id}
             name={friend.name}
             image={friend.image}
+
           />
         ))}
       </Wrapper>
@@ -38,5 +41,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
