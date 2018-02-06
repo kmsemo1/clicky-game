@@ -1,5 +1,6 @@
 import React from "react";
 import "./FriendCard.css";
+import Score from "../Score/score";
 
 
 const FriendCard = props => (

@@ -22,15 +22,17 @@ class Score extends React.Component {
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Clicky Game</a>
+                <a class="navbar-brand">Clicky Game</a>
               </div>
               
               <div class="navbar-header navbar-right">
-                <a class="navbar-brand" onClick={this.state.count}>Score:    </a>
-                <a class="navbar-brand">|| Top Scpre:    </a>
+                <a class="navbar-brand">Score:{this.state.count}</a>
+                <a class="navbar-brand">  || Top Score:    </a>
               </div>
             </div>
           </nav>
           )
       }
     }
+
+    export default Score;
