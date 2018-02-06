@@ -9,8 +9,11 @@ import "./App.css";
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    friends,
+    score: 0
   };
+
+
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
@@ -19,6 +22,7 @@ class App extends Component {
         <Title>Click on an image once to score. But lose if image is clicked on more than once.</Title>
         {this.state.friends.map(friend => (
           <FriendCard
+            score={this.addPoint}
             id={friend.id}
             key={friend.id}
             name={friend.name}

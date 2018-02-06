@@ -1,10 +1,10 @@
 import React from "react";
 import "./FriendCard.css";
-import Score from "../Score/score";
+
 
 
 const FriendCard = props => (
-  <div className="card" onClick={this.scoreCount}>
+  <div className="card">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>

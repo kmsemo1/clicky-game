@@ -5,10 +5,9 @@ class Score extends React.Component {
       score: 0
     };
 
-    scoreCount = () => {
+    addPoint = () => {
         this.setState({ count: this.state.count + 1 });
       };
-
       render () {
           return (
             <nav class="navbar navbar-default">
